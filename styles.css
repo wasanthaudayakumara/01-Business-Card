@@ -15,10 +15,19 @@ body{
     width: 300px;
     overflow: hidden;
     box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid #1b5dd6;
+    border: 2px solid;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
     position: relative;
+    animation: rotateBordercolor 5s linear 2s infinite alternate;
+
+}
+@keyframes rotateBordercolor{
+    0%   {border-color:   red; }
+    25%  {border-color:    yellow; }
+    50%  {border-color:    blue; }
+    75%  {border-color:    green; }
+    100% {border-color:    red; }
 }
 .profile-image{
     width: 100%;
